@@ -1,10 +1,7 @@
-.easy-peasy {
-    transform: matrix3d(1, 0, 0, 0,
-			0, 1, 0, 0,
-			0, 0, 1, 0,
-			0, 0, 0, 1);
+.easy-peasy {	    /*	x  y  z  sum*/
+    transform: matrix3d(1, 0, 0, 0.001,	/*x*/
+			0, 1, 0, 0,	/*y*/
+			0, 0, 1, 0,	/*z*/
+			0, 0, 0, 1);	/*sum*/
 }
 
-img {
-    height: 50vh;
-}
