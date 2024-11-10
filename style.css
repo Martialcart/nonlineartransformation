@@ -1,7 +1,16 @@
-.easy-peasy {	    /*	x  y  z  sum*/
-    transform: matrix3d(1, 0, 0, 0.001,	/*x*/
-			0, 1, 0, 0,	/*y*/
-			0, 0, 1, 0,	/*z*/
-			0, 0, 0, 1);	/*sum*/
+li {	    
+		/*	x    y   z   sum*/
+    transform: matrix3d(100  ,0	,0  ,0		,/*x*/
+			0   ,100,0  ,0		,/*y*/
+			0   ,0	,100,0		,/*z*/
+			0   ,0	,0  ,100	);	/*sum*/
 }
 
+ul {
+    display: flex;
+    gap: 1em;
+}
+
+img {
+    width: 33vw;
+}
