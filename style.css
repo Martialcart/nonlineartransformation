@@ -1,9 +1,8 @@
 li {	    
-		/*	x    y   z   sum*/
-    transform: matrix3d(100  ,0	,0  ,0		,/*x*/
-			0   ,100,0  ,0		,/*y*/
-			0   ,0	,100,0		,/*z*/
-			0   ,0	,0  ,100	);	/*sum*/
+    animation-name: spin;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 20;
 }
 
 ul {
@@ -13,4 +12,31 @@ ul {
 
 img {
     width: 33vw;
+}
+
+@keyframes spin{
+    0% {
+		/*	x    y   z   sum*/
+    transform: matrix3d(100 ,0  ,0  ,0		,/*x*/
+			0   ,100,0  ,0		,/*y*/
+			0   ,0	,100,0		,/*z*/
+			0   ,1	,0  ,100	);	/*sum*/
+
+    }
+    50% {
+		/*	x    y   z   sum*/
+    transform: matrix3d(100 ,-100  ,0  ,0		,/*x*/
+			100 ,100,0  ,0		,/*y*/
+			0   ,0	,100,0		,/*z*/
+			0   ,0  ,0  ,100	);	/*sum*/
+
+    }
+    100% {
+		/*	x    y   z   sum*/
+    transform: matrix3d(100 ,0  ,0  ,0		,/*x*/
+			0   ,100,0  ,0		,/*y*/
+			0   ,0	,100,0		,/*z*/
+			0   ,0	,0  ,100	);	/*sum*/
+	
+    }
 }
