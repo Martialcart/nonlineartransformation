@@ -1,7 +1,32 @@
 .easy-peasy {	    /*	x  y  z  sum*/
+    transform: matrix3d(1.1, 0, 0, 0,	/*x*/
+			0, 0.85, 0, 0,	/*y*/
+			0, 0, 1, 0,	/*z*/
+			0, 0, 0, 1);	/*sum*/
+    background-color: green;
+}
+
+.tile {
+    width: 30vw;
+    height: 50vh;
+}
+
+div {
+    transform: rotateZ(70deg);
+}
+
+.easy-peasy-left {
     transform: matrix3d(1, 0, 0, 0.001,	/*x*/
 			0, 1, 0, 0,	/*y*/
 			0, 0, 1, 0,	/*z*/
 			0, 0, 0, 1);	/*sum*/
+
 }
 
+.easy-peasy-right {
+    transform: matrix3d(1, 0, 0, -0.001,	/*x*/
+			0, 1, 0, 0,	/*y*/
+			0, 0, 1, 0,	/*z*/
+			0, 0, 0, 1);	/*sum*/
+
+}
